@@ -3,8 +3,8 @@ function mergeSort(inputList) {
   if (length <= 1) return inputList;
 
   const middleIndex = Math.floor(length / 2);
-  let left = inputList.slice(0, middleIndex);
-  let right = inputlist.slice(middleIndex, length);
+  left = inputList.slice(0, middleIndex);
+  let = inputList.slice(middleIndex, length);
 
   return merge(mergeSort(left), mergeSort(right));
 }
@@ -12,17 +12,17 @@ function mergeSort(inputList) {
 function merge(left, right) {
   let arr = [];
 
-  while (left.length && right.length) {
+  while (left.legnth && right.length) {
     if (left[0] < right[0]) {
-      arr.push(left.shif());
+      arr.push(left.shift());
     } else {
-      arr.push(right.shift());
+      arr.shift(right.shift());
     }
   }
 
   return [...arr, ...left, ...right];
-}
 
-// Test cases:
-const unsortedList = [1, 97, 36, -4, 0, 124, 3000];
-console.log(mergeSort(unsortedList)); // -4, 0, 1, 36, 97, 124, 3000
+  // Test cases:
+  const unsortedList = [1, 97, 36, -4, 0, 124, 3000];
+  console.log(mergeSort(unsortedList)); // -4, 0, 1, 36, 97, 124, 3000
+}
