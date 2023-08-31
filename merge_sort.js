@@ -27,19 +27,19 @@
 // }
 
 /*
-0.
-a.
+
 function mergeSort(inputList) {
   const { length } = inputList;
   if (length <= 1) return inputList;
 }
-b.
+
 const middleIndex = Math.floor(length / 2);
 let = inputList.slice(0, middleIndex);
 let = inputList.slice(middleIndex, length);
 
 return merge(mergeSort(left), mergeSort(right));
-c.
+}
+
 function merge(left, right) {
   let arr = [];
   
